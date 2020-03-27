@@ -26,10 +26,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .logo-title img {
-  padding-right: 30px;
+  max-width: 150px;
 }
 
 .logo-text {
@@ -104,6 +105,10 @@ td {
   .logo-title {
     flex-direction: row;
     padding-bottom: 30px;
+  }
+
+  .logo-title img {
+    padding-right: 30px;
   }
 
   #biglietto {
