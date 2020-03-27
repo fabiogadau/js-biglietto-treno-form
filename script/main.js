@@ -6,6 +6,7 @@ VENDITA BIGLIETTO TRENO
  // REFERENZE
  var container = document.getElementById('biglietto');
  var bottoneGenera = document.getElementById('bottoneGenera');
+ var bottoneAnnulla = document.getElementById('bottoneAnnulla');
 
  // EVENTI
  //Generare biglietto
@@ -63,4 +64,20 @@ VENDITA BIGLIETTO TRENO
 );
 
 // Resetta biglietto
-var bottoneAnnulla = document.getElementById('bottoneAnnulla');
+bottoneAnnulla.addEventListener('click',
+  function(){
+    // Reset input
+    document.getElementById('nome').value = '';
+    document.getElementById('km').value = '';
+    document.getElementById('fascia-eta').value = 'minorenne';
+
+    // Reset output
+    document.getElementById('offerta-applicata').innerHTML = '';
+    document.getElementById('carrozza').innerHTML = '';
+    document.getElementById('codice-cp').innerHTML = '';
+    document.getElementById('costo').innerHTML = '';
+
+    // Reset biglietto
+    container.className = 'hidden';
+  }
+);
