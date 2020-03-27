@@ -7,6 +7,7 @@ VENDITA BIGLIETTO TRENO
  var container = document.getElementById('biglietto');
  var bottoneGenera = document.getElementById('bottoneGenera');
  var bottoneAnnulla = document.getElementById('bottoneAnnulla');
+ var acquista = document.getElementById('acquista');
 
  // EVENTI
  //Generare biglietto
@@ -57,6 +58,9 @@ VENDITA BIGLIETTO TRENO
 
     // Mostra biglietto
     container.className = 'show';
+
+    // Mostra pulsante Acquista
+    acquista.className = 'show';
   }
 );
 
@@ -76,5 +80,8 @@ bottoneAnnulla.addEventListener('click',
 
     // Reset biglietto
     container.className = 'hidden';
+
+    // Nasconti pulsante acquista
+    acquista.className = 'hidden';
   }
 );
