@@ -47,6 +47,16 @@ body {
   align-items: center;
 }
 
+.title {
+  text-align: center;
+}
+
+.dati-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .btn {
   background-color: #f9c70e;
   border: 2px solid #bfccd4;
