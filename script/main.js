@@ -57,10 +57,7 @@ VENDITA BIGLIETTO TRENO
 
     // Mostra biglietto
     container.className = 'show';
-
   }
-
-
 );
 
 // Resetta biglietto
