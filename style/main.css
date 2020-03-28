@@ -13,10 +13,12 @@ body {
 
 .hidden {
   opacity: 0;
+  transition: opacity .5s linear;
 }
 
 .show {
   opacity: 1;
+  transition: opacity .5s linear;
 }
 
 .logo-title {
@@ -49,6 +51,7 @@ body {
 
 .title {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .dati-input {
@@ -57,15 +60,46 @@ body {
   align-items: center;
 }
 
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+select {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0 5px 5px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  background-color: #f9c70e;
+}
+
 .btn {
   background-color: #f9c70e;
   border: 2px solid #bfccd4;
   padding: 10px 20px;
   border-radius: 5px;
-  margin-right: 10px;
   cursor: pointer;
   font-weight: bold;
   color: #11294d;
+  box-shadow: 3px 3px rgba(0, 0, 0, .5);
+  font-family: 'Baloo 2', cursive;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.genera {
+  margin-right: 10px;
+}
+
+.annulla {
+  background-color: #bfccd4;
 }
 
 .wrapper .col {
@@ -84,7 +118,7 @@ body {
   margin: 20px 0 20px;
 }
 
-.title {
+.title-ticket {
   font-size: 30px;
 }
 
@@ -103,12 +137,14 @@ td {
 #acquista {
   background-color: #f9c70e;
   border: 2px solid #bfccd4;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 5px;
-  margin-right: 10px;
   cursor: pointer;
   font-weight: bold;
   color: #11294d;
+  box-shadow: 3px 3px rgba(0, 0, 0, .5);
+  font-family: 'Baloo 2', cursive;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 667px) {
